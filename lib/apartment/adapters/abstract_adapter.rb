@@ -67,6 +67,10 @@ module Apartment
       end
       alias :default_schema :default_tenant # TODO deprecate default_schema
 
+      def copy_schema
+        Apartment.copy_schema
+      end
+      
       #   Drop the tenant
       #
       #   @param {String} tenant name
